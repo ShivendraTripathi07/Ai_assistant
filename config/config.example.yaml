@@ -1,5 +1,5 @@
 default_provider: gemini
-gemini_model: gemini-2.5-flash
+gemini_model: gemini-3-flash
 search_provider: tavily
 database_path: copilot.sqlite3
 llm_timeout_seconds: 45

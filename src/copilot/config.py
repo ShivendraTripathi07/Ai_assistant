@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_prefix="COPILOT_", env_file=".env", extra="ignore")
 
     gemini_api_key: str = ""
-    gemini_model: str = "gemini-2.5-flash"
+    gemini_model: str = "gemini-3-flash"
     tavily_api_key: str = ""
     database_path: Path = user_data_path("PersonalAICopilot") / "copilot.sqlite3"
     llm_timeout_seconds: float = Field(default=45, gt=0, le=180)
